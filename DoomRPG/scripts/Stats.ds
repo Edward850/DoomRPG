@@ -669,16 +669,6 @@ function void CheckStatBounds()
     // Cap Survival Bonus
     if (Player.SurvivalBonus > 75)
         Player.SurvivalBonus = 75;
-    
-    // Cap chances at 100%
-    if (Player.HealthChance > 100)  Player.HealthChance = 100;
-    if (Player.EPChance > 100)      Player.EPChance = 100;
-    if (Player.ArmorChance > 100)   Player.ArmorChance = 100;
-    if (Player.PowerupChance > 100) Player.PowerupChance = 100;
-    if (Player.WeaponChance > 100)  Player.WeaponChance = 100;
-    if (Player.TokenChance > 100)   Player.TokenChance = 100;
-    if (Player.AugChance > 100)     Player.AugChance = 100;
-    if (Player.ShieldChance > 100)  Player.ShieldChance = 100;
 
     // Speed capping CVAR
     if (Player.Speed > GetCVarFixed("drpg_maxspeed"))
@@ -692,15 +682,7 @@ function void CheckStatBounds()
 // Luck Chances
 function void CheckLuck()
 {
-    Player.HealthChance = Player.Luck * 0.025;
-    Player.EPChance = Player.Luck * 0.025;
-    Player.ArmorChance = Player.Luck * 0.025;
-    Player.PowerupChance = Player.Luck * 0.0125;
-    Player.WeaponChance = Player.Luck * 0.0125;
-    Player.TokenChance = Player.Luck * 0.01;
-    Player.AugChance = Player.Luck * 0.0025;
-    Player.ShieldChance = Player.Luck * 0.005;
-    Player.StimChance = Player.Luck * 0.0125;
+    
 };
 
 function void CheckBurnout()

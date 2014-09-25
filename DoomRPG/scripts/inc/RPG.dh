@@ -118,17 +118,10 @@ struct PlayerData
     int EPTime;
     int EPAmount;
     int RegenBoostTimer;
-
-    // Luck Chance Percentages
-    fixed HealthChance;
-    fixed EPChance;
-    fixed ArmorChance;
-    fixed PowerupChance;
-    fixed WeaponChance;
-    fixed TokenChance;
-    fixed AugChance;
-    fixed ShieldChance;
-    fixed StimChance;
+    
+    // Luck
+    int LuckLevel;
+    int LuckLevelBonus;
     
     // Menu Data
     bool MenuBlock;

@@ -1095,7 +1095,7 @@ script void MonsterDeath()
             // Rare Vials
             DropMonsterItem(Killer, DropTID, "DRPGVialDropperRare", 8);
             
-            // Luck-based Drops
+            /* TODO: Luck-based Drops
             if (Killer > -1)
             {
                     if (RandomFixed(0.0, 100.0) < Players(Killer).HealthChance) DropMonsterItem(Killer, DropTID, "DRPGHealthDropper", 256);
@@ -1110,7 +1110,7 @@ script void MonsterDeath()
                     if (RandomFixed(0.0, 100.0) < Players(Killer).StimChance)   DropMonsterItem(Killer, DropTID, "DRPGStimDropper", 256);
                     if (RandomFixed(0.0, 100.0) < Players(Killer).StimChance)   DropMonsterItem(Killer, DropTID, "DRPGVialDropper", 256);
                     if (RandomFixed(0.0, 100.0) < Players(Killer).StimChance)   DropMonsterItem(Killer, DropTID, "DRPGVialDropperRare", 256);
-            };
+            }; */
             
             Delay(1);
         };

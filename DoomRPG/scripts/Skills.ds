@@ -2186,6 +2186,7 @@ function void CheckSkills()
             if (YellowAuraLevel == 5 || Player.SoulActive[SOUL_YELLOW])
                 LuckMult = 8;
             
+            /* TODO
             Player.HealthChance *= LuckMult;
             Player.EPChance *= LuckMult;
             Player.ArmorChance *= LuckMult;
@@ -2195,6 +2196,7 @@ function void CheckSkills()
             Player.AugChance *= LuckMult;
             Player.ShieldChance *= LuckMult;
             Player.StimChance *= LuckMult;
+            */
         };
         
         // Spawn Aura FX
